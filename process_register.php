@@ -113,10 +113,12 @@
         // If the request method is not POST, add an error message
         $errors[] = "Invalid request method.";
     }
-
-    if (!empty($errors)) {
-        foreach ($errors as $error) {
-            echo "<p style='color:red;'>$error</p>";
-        }
-    }
 ?>
+
+<?php if (!empty($errors)): ?>
+    <script>
+        alert(`<?php echo implode("\\n", array_map("addslashes", $errors)); ?>`);
+        window.location.href = "register.html";
+    </script>
+<?php endif; ?>
+
