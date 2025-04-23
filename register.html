@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <form action="process_register.php" method="POST" enctype="multipart/form-data">
+        <!-- Full Name -->
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" required><br>
+        <!-- Email -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <!-- Password -->
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <!-- Confirm Password -->
+        <label for="confirm_password">Confirm Password:</label><br>
+        <input type="password" id="confirm_password" name="confirm_password" required><br>
+        <!-- Profile Picture -->
+        <label for="profile_picture">Profile Picture:</label><br>
+        <input type="file" id="profile_picture" name="profile_picture" accept=".jpg, .png, .jpeg" required><br>
+        <!-- Gender -->
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br>
+        <!-- Terms and Conditions -->
+        <input type="checkbox" id="terms" name="terms" value="agree" required>
+        <label for="terms">I agree to the terms and conditions</label><br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
+
+
