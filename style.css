@@ -62,7 +62,7 @@ input[type="text"],
 input[type="email"],
 input[type="password"],
 input[type="file"],
-input[type="submit"]{
+input[type="submit"] {
     margin-top: 2px;
     width: 100%;
     padding: 10px;
@@ -160,3 +160,4 @@ p.error {
 .logout-button:hover {
     background-color: #c82333;
 }
+

@@ -1,7 +1,15 @@
 <?php
+// Start the session to be able to unset and destroy it
 session_start();
-session_unset(); // Clear all session variables
-session_destroy(); // Destroy the session
-header("Location: register.html"); // Or index.php if that’s your landing page
+
+// Clear all session variables
+session_unset();
+
+// Destroy the session
+session_destroy();
+
+// Redirect to the registration page
+header("Location: register.html");
+
 exit;
 ?>

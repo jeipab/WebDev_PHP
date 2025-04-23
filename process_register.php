@@ -6,7 +6,6 @@
 
     // Check if the request method is POST
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
-        
         // Retrieve and validate the full name
         $fullname = isset($_POST['fullname']) ? htmlspecialchars(trim($_POST['fullname'])) : '';
         if (empty($fullname)) {
@@ -121,4 +120,3 @@
         window.location.href = "register.html";
     </script>
 <?php endif; ?>
-

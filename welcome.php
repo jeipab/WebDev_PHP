@@ -3,6 +3,7 @@
 
     // Check if user is logged in
     if (!isset($_SESSION['user'])) {
+        // Redirect to login page if not logged in
         header("Location: index.php");
         exit;
     }
@@ -29,8 +30,9 @@
             <img src="uploads/<?php echo htmlspecialchars($user['profile_picture']); ?>" alt="Profile Picture" class="profile-pic">
 
             <form action="logout.php" method="post" style="margin-top: 20px;">
-            <button type="submit" class="logout-button">Log Out</button>
-        </form>
+                <!-- Log out button -->
+                <button type="submit" class="logout-button">Log Out</button>
+            </form>
         </div>
     </div>
 </body>
