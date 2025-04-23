@@ -20,12 +20,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome, <?php echo htmlspecialchars($user['fullname']); ?>!</h1>
-        <p>Email: <?php echo htmlspecialchars($user['email']); ?></p>
-        
-        <p>Profile Picture:</p>
-        <img src="uploads/<?php echo htmlspecialchars($user['profile_picture']); ?>" alt="Profile Picture" class="profile-pic">
+    <div class="welcome-container">
+        <div class="welcome-box">
+            <h1>Welcome, <?php echo htmlspecialchars($user['fullname']); ?>!</h1>
+            <p>Email: <?php echo htmlspecialchars($user['email']); ?></p>
+
+            <p>Profile Picture:</p>
+            <img src="uploads/<?php echo htmlspecialchars($user['profile_picture']); ?>" alt="Profile Picture" class="profile-pic">
+
+            <form action="logout.php" method="post" style="margin-top: 20px;">
+            <button type="submit" class="logout-button">Log Out</button>
+        </form>
+        </div>
     </div>
 </body>
 </html>
