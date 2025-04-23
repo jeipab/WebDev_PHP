@@ -1,0 +1,162 @@
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #5cb3ff;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Form and welcome container */
+.form-container {
+    background: #ececec;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 500px;
+}
+
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    min-height: 50vh;
+    padding: 20px;
+}
+
+.welcome-box {
+    text-align: center;
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Headings */
+.form-container h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+/* Labels and inputs */
+label {
+    display: block;
+    margin-bottom: 2px;
+    font-weight: 600;
+    color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"],
+input[type="submit"]{
+    margin-top: 2px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    padding: 0;
+    margin: 0 8px 0 0;
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Radio and checkbox alignment */
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+/* Error message styling (if shown inline) */
+p.error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Profile picture style on welcome page */
+.profile-pic {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin: 10px auto 0 auto;
+    object-fit: cover;
+}
+
+.inline-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.inline-group label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-weight: normal;
+}
+
+.centered-group {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.centered-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+}
+
+.logout-button {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #c82333;
+}
