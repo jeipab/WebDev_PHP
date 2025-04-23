@@ -5,37 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="form-container">
     <form action="process_register.php" method="POST" enctype="multipart/form-data">
         <!-- Full Name -->
-        <label for="fullname">Full Name:</label><br>
-        <input type="text" id="fullname" name="fullname" required><br>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
         <!-- Email -->
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
         <!-- Password -->
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
         <!-- Confirm Password -->
-        <label for="confirm_password">Confirm Password:</label><br>
-        <input type="password" id="confirm_password" name="confirm_password" required><br>
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required>
         <!-- Profile Picture -->
-        <label for="profile_picture">Profile Picture:</label><br>
-        <input type="file" id="profile_picture" name="profile_picture" accept=".jpg, .png, .jpeg" required><br>
+        <label for="profile_picture">Profile Picture:</label>
+        <input type="file" id="profile_picture" name="profile_picture" accept=".jpg, .png, .jpeg" required>
         <!-- Gender -->
-        <label for="gender">Gender:</label><br>
-        <input type="radio" id="male" name="gender" value="male" required>
-        <label for="male">Male</label><br>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label><br>
-        <input type="radio" id="other" name="gender" value="other">
-        <label for="other">Other</label><br>
+        <label>Gender:</label>
+        <div class="inline-group">
+            <label><input type="radio" name="gender" value="male" required> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="other"> Other</label>
+        </div>
         <!-- Terms and Conditions -->
-        <input type="checkbox" id="terms" name="terms" value="agree" required>
-        <label for="terms">I agree to the terms and conditions</label><br>
+        <div class="centered-group">
+            <label>
+                <input type="checkbox" name="terms" value="agree" required>
+                I agree to the terms and conditions
+            </label>
+        </div>
         <input type="submit" value="Submit">
     </form>
+</div>
 
 </body>
 </html>
